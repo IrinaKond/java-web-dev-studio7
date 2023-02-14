@@ -5,12 +5,14 @@ package org.launchcode.studio7;
         public DVD(int discCapacity, String discName, String discContent, String discType) {
             super(discCapacity, discName, discContent, discType);
         }
+        @Override
         public void spinDisc() {
-
+            System.out.println("A DVD spins at a rate of 570 - 1600 rpm.");
         }
 
+        @Override
         public String readData(){
-            return "data";
+            return "Data";
         }
 
         public void writeData(String data) {
